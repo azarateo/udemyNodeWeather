@@ -1,15 +1,13 @@
 const request = require('postman-request')
 
-/*
+
 const baseurl2 = 'https://api.mapbox.com/'
 const endpoint = 'maxbox.places'
-const searchText = 'Bogota'
+const searchText = 'Suba-Bogota'
 const forwardGeocoding = '/geocoding/v5/'+endpoint+'/'+searchText+'.json'
 const access_token = '?access_token=pk.eyJ1IjoiYXphcmF0ZW8iLCJhIjoiY2o4cmd4dTFuMHZ4cTJxbXBvM29wYW0zeCJ9.KzONZERt0JHUwnZvILynjw'
-const url2= baseurl2+forwardGeocoding+access_token
-*/
 
-const urlMapBox = 'https://api.mapbox.com/geocoding/v5/mapbox.places/Bogota.json?access_token=pk.eyJ1IjoiYXphcmF0ZW8iLCJhIjoiY2o4cmd4dTFuMHZ4cTJxbXBvM29wYW0zeCJ9.KzONZERt0JHUwnZvILynjw'
+const urlMapBox = baseurl2+forwardGeocoding+access_token
 request({url: urlMapBox, json: true},(error,response) =>{
     if(!error){
         const data = response.body
