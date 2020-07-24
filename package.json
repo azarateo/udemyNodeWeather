@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/azarateo/udemyNodeWeather/issues"
   },
-  "homepage": "https://github.com/azarateo/udemyNodeWeather#readme"
+  "homepage": "https://github.com/azarateo/udemyNodeWeather#readme",
+  "dependencies": {
+    "postman-request": "^2.88.1-postman.23"
+  }
 }
