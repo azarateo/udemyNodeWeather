@@ -10,7 +10,7 @@ const url= baseurl2+forwardGeocoding+access_token+options
 
 request({url: url, json: true},(error,response) =>{
     if(error){
-        console.log('Something went wrong')
+        console.log('Something went wrong with accessing the Geocoding service')
     }else if(response.body.features.length === 0){
         console.log('Location not found')
     }
@@ -28,7 +28,7 @@ request({url: url, json: true},(error,response) =>{
         
         request({ url: url, json: true},(error,response)=>{
             if(error){
-                console.log('Something went wrong')
+                console.log('Something went wrong with the Weather service')
             }
             else if(response.body.error){
                 console.log('There was an error trying to get that location: '+response.body.error.info)
